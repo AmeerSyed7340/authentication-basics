@@ -2,9 +2,10 @@
   "name": "authentication-basics",
   "version": "1.0.0",
   "description": "\"# authentication-basics\"",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "express": "^4.18.2",
     "express-session": "^1.18.0",
     "mongoose": "^8.1.2",
+    "nodemon": "^3.0.3",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0"
   }
