@@ -8,8 +8,11 @@ const LocalStrategy = require("passport-local").Strategy;
 const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+require('dotenv').config();
 
-const mongoDb = "mongodb://127.0.0.1:27017/authentication_basics";
+console.log(process.env.MONGODB_URL);
+
+const mongoDb = process.env.MONGODB_URL;
 
 
 async function connectDB() {
@@ -22,7 +25,6 @@ async function connectDB() {
   }
   connectDB();
   
-
 
 // mongoose.connect(mongoDb);
 // const db = mongoose.connection;
